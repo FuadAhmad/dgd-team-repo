@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://level_box.gd" id="1_bh3ql"]
 [ext_resource type="FontFile" uid="uid://cwgdhmo3tbmnj" path="res://assets/Rubik-Bold.ttf" id="2_lnepu"]
 [ext_resource type="Shader" path="res://2d_outline.gdshader" id="3_ieiix"]
-[ext_resource type="Texture2D" uid="uid://d0eqbbvydm3ia" path="res://assets/lockIcon2.png" id="4_l2v80"]
+[ext_resource type="Texture2D" uid="uid://crmuy5ecn44ls" path="res://assets/item1.png" id="4_dmg7n"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tewb2"]
 bg_color = Color(1, 1, 1, 0.560784)
@@ -51,7 +51,7 @@ theme_override_constants/margin_bottom = 10
 [node name="Lock" type="TextureRect" parent="MarginContainer"]
 material = SubResource("ShaderMaterial_p0m5e")
 layout_mode = 2
-texture = ExtResource("4_l2v80")
+texture = ExtResource("4_dmg7n")
 expand_mode = 1
 stretch_mode = 5
 

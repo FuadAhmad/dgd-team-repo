@@ -28,7 +28,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.511259, 0.511259, 0.511259, 0.368627)
+color = Color(0, 0, 0, 0.6)
 
 [node name="LevelMenu" parent="." instance=ExtResource("1_yf0y5")]
 layout_mode = 1
