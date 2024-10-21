@@ -1,0 +1,165 @@
+[gd_scene load_steps=2 format=3 uid="uid://cu2tp6yfuvbvf"]
+
+[ext_resource type="Script" path="res://Gameplay/board.gd" id="1_k0vch"]
+
+[node name="Board" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 200.0
+offset_top = 128.0
+offset_right = 656.0
+offset_bottom = 584.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 5
+script = ExtResource("1_k0vch")
+
+[node name="Button" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button2" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button3" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button4" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button5" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button6" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button7" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button8" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button9" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button10" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button11" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button12" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button13" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button14" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
+[node name="Button15" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+
+[node name="Button16" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+
+[node name="Button17" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+
+[node name="Button18" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+
+[node name="Button19" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+
+[node name="Button20" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+
+[node name="Button21" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+
+[node name="Button22" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+
+[node name="Button23" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+
+[node name="Button24" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+
+[node name="Button25" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64

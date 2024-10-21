@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkhq58ogy7np"]
+
+[ext_resource type="Texture2D" uid="uid://csedu43lmhmt3" path="res://Gameplay/Dab.png" id="1_eu5x6"]
+
+[node name="Ball" type="TextureRect"]
+offset_right = 88.0
+offset_bottom = 88.0
+texture = ExtResource("1_eu5x6")
+expand_mode = 3
+
+[node name="number" type="Label" parent="."]
+layout_mode = 0
+offset_right = 88.0
+offset_bottom = 88.0
+theme_override_font_sizes/font_size = 48
+text = "88"
+horizontal_alignment = 1
+vertical_alignment = 1

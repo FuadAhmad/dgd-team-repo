@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7c1l6j2kjnsa"]
+
+[ext_resource type="Script" path="res://Gameplay/gameplay.gd" id="1_k0f4f"]
+[ext_resource type="Script" path="res://Gameplay/ball_call.gd" id="2_j37dy"]
+[ext_resource type="PackedScene" uid="uid://bkhq58ogy7np" path="res://Gameplay/ball.tscn" id="3_r3gmh"]
+[ext_resource type="PackedScene" uid="uid://cu2tp6yfuvbvf" path="res://Gameplay/board.tscn" id="3_sg2tb"]
+
+[node name="Gameplay" type="Node2D"]
+script = ExtResource("1_k0f4f")
+
+[node name="BallCall" type="Node2D" parent="."]
+position = Vector2(6, 0)
+script = ExtResource("2_j37dy")
+ball = ExtResource("3_r3gmh")
+
+[node name="ReferenceRect" type="ReferenceRect" parent="BallCall"]
+offset_left = 183.0
+offset_right = 223.0
+offset_bottom = 40.0
+
+[node name="ReferenceRect2" type="ReferenceRect" parent="BallCall"]
+offset_left = 312.0
+offset_right = 352.0
+offset_bottom = 40.0
+
+[node name="ReferenceRect3" type="ReferenceRect" parent="BallCall"]
+offset_left = 443.0
+offset_right = 483.0
+offset_bottom = 40.0
+
+[node name="ReferenceRect4" type="ReferenceRect" parent="BallCall"]
+offset_left = 548.0
+offset_right = 588.0
+offset_bottom = 40.0
+
+[node name="ReferenceRect5" type="ReferenceRect" parent="BallCall"]
+offset_left = 662.0
+offset_right = 702.0
+offset_bottom = 40.0
+
+[node name="Board" parent="." instance=ExtResource("3_sg2tb")]
