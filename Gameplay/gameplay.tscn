@@ -1,12 +1,30 @@
-[gd_scene load_steps=5 format=3 uid="uid://c7c1l6j2kjnsa"]
+[gd_scene load_steps=7 format=3 uid="uid://c7c1l6j2kjnsa"]
 
 [ext_resource type="Script" path="res://Gameplay/gameplay.gd" id="1_k0f4f"]
+[ext_resource type="Texture2D" uid="uid://dagb0tnl2wjrm" path="res://Gameplay/bingo-card2.png" id="2_edurn"]
 [ext_resource type="Script" path="res://Gameplay/ball_call.gd" id="2_j37dy"]
 [ext_resource type="PackedScene" uid="uid://bkhq58ogy7np" path="res://Gameplay/ball.tscn" id="3_r3gmh"]
 [ext_resource type="PackedScene" uid="uid://cu2tp6yfuvbvf" path="res://Gameplay/board.tscn" id="3_sg2tb"]
+[ext_resource type="Texture2D" uid="uid://dfatjksuo6srg" path="res://Gameplay/goodBingoBG.jpg" id="6_jqddx"]
 
 [node name="Gameplay" type="Node2D"]
 script = ExtResource("1_k0f4f")
+
+[node name="CardBG" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 310.0
+offset_top = 118.0
+offset_right = 753.0
+offset_bottom = 1386.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 0.417)
+texture = ExtResource("2_edurn")
+expand_mode = 4
 
 [node name="BallCall" type="Node2D" parent="."]
 position = Vector2(6, 30)
@@ -39,5 +57,32 @@ offset_right = 760.0
 offset_bottom = 40.0
 
 [node name="Board" parent="." instance=ExtResource("3_sg2tb")]
-offset_left = 318.0
-offset_right = 774.0
+clip_contents = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.0
+offset_left = 321.0
+offset_top = 177.0
+offset_right = 777.0
+offset_bottom = 633.0
+grow_vertical = 1
+scale = Vector2(0.92, 0.92)
+
+[node name="BingoWin" type="TextureRect" parent="."]
+offset_left = 304.0
+offset_top = 173.0
+offset_right = 773.0
+offset_bottom = 646.0
+texture = ExtResource("6_jqddx")
+
+[node name="Label" type="Label" parent="BingoWin"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 118.0
+offset_right = 461.0
+offset_bottom = 309.0
+theme_override_font_sizes/font_size = 104
+text = "B I N G O
+W I N"
+horizontal_alignment = 1
