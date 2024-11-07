@@ -2,9 +2,10 @@ extends Node2D
 
 var number_to_call = []
 var called_index = 0
-var wait_for_seconds = 5
+var wait_for_seconds = 2
 @export var ball:PackedScene;
 var ball_position_Xs = []
+var tween
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -23,15 +24,17 @@ func call_a_ball(seconds):
 	#print(called_index)
 	var new_ball = ball.instantiate()
 	new_ball.get_child(0).text = str(number_to_call[called_index])#.text = str(number_to_call[called_index])
-	add_child(new_ball, 0) #add_child(new_ball)
+	add_child(new_ball) #add_child(new_ball, 0)
 	#new_ball.position.x = 200
-	await get_tree().create_timer(seconds/2).timeout
-	print('moving')
-	move_balls()
+	tween = get_tree().create_tween()
+	tween.tween_property(new_ball, "scale", Vector2(.8,.8), seconds/1.5)
 	
 	await get_tree().create_timer(seconds/2).timeout
+	move_old_balls()#move_balls()
+	await get_tree().create_timer(seconds/2).timeout
 	called_index += 1
-	call_a_ball(wait_for_seconds)
+	if called_index < number_to_call.size():
+		call_a_ball(wait_for_seconds)
 	
 
 func move_balls():
@@ -39,15 +42,31 @@ func move_balls():
 	var tbs_len = len(tbs)
 	print(tbs_len)
 	if len(tbs) > 5:
-		remove_child(tbs[0])
+		remove_child(tbs[-1])
 	for i in range(len(get_children())):
 		tbs[i].position.x = ball_position_Xs[i]
 
+func move_old_balls():
+	var tbs = get_children()
+	var tbs_len = len(tbs)
+	#print(tbs_len)
+	if len(tbs) > 5:
+		remove_child(tbs[0])
+	
+	tbs = get_children()
+	tbs_len = len(tbs)
+	for i in range(0, len(tbs)):
+		#print(tbs[i].name)#tbs[i].position.x = ball_position_Xs[tbs_len - i-1]
+		tween = get_tree().create_tween() #tween.set_parallel(true)
+		tween.tween_property(tbs[i], "position", ball_position_Xs[tbs_len - i-1], wait_for_seconds/2.5 )
+		#break#tween.start()
+			
 func get_ball_position_Xs():
 	var tbs = get_children()
 	print(len(tbs))
 	for c in tbs:
-		ball_position_Xs.append(c.position.x)
+		#print(c.name)
+		ball_position_Xs.append(c.position) #.x
 		
 	for c in tbs:
 		remove_child(c)

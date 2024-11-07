@@ -34,7 +34,7 @@ func set_board_UI():
 		
 		
 func _on_button_daub(indx, button):
-	#print("hghghgh", indx)
+	print("Pressed button index", indx)
 	button.disabled = true	
 	
 func get_random_numbers(nums, low, high):
