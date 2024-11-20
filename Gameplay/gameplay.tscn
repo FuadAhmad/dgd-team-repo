@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://c7c1l6j2kjnsa"]
+[gd_scene load_steps=10 format=3 uid="uid://c7c1l6j2kjnsa"]
 
 [ext_resource type="Script" path="res://Gameplay/gameplay.gd" id="1_k0f4f"]
 [ext_resource type="Texture2D" uid="uid://dagb0tnl2wjrm" path="res://Gameplay/bingo-card2.png" id="2_edurn"]
@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://bkhq58ogy7np" path="res://Gameplay/ball.tscn" id="3_r3gmh"]
 [ext_resource type="PackedScene" uid="uid://cu2tp6yfuvbvf" path="res://Gameplay/board.tscn" id="3_sg2tb"]
 [ext_resource type="Texture2D" uid="uid://dfatjksuo6srg" path="res://Gameplay/goodBingoBG.jpg" id="6_jqddx"]
+[ext_resource type="Texture2D" uid="uid://cbxx8285qlkfh" path="res://Gameplay/monster.png" id="7_k7qb3"]
+[ext_resource type="Script" path="res://Gameplay/monster.gd" id="8_t26ny"]
+[ext_resource type="Texture2D" uid="uid://bdjjv74df4224" path="res://Gameplay/ice-frozen.png" id="9_ec58l"]
 
 [node name="Gameplay" type="Node2D"]
 script = ExtResource("1_k0f4f")
@@ -86,3 +89,22 @@ theme_override_font_sizes/font_size = 104
 text = "B I N G O
 W I N"
 horizontal_alignment = 1
+
+[node name="monster" type="TextureRect" parent="."]
+offset_top = 283.0
+offset_right = 228.0
+offset_bottom = 550.0
+texture = ExtResource("7_k7qb3")
+expand_mode = 1
+stretch_mode = 4
+script = ExtResource("8_t26ny")
+
+[node name="frozen" type="TextureRect" parent="monster"]
+layout_mode = 0
+offset_left = -5.0
+offset_top = 46.0
+offset_right = 54.0
+offset_bottom = 111.0
+texture = ExtResource("9_ec58l")
+expand_mode = 1
+stretch_mode = 4

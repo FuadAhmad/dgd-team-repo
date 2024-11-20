@@ -2,7 +2,7 @@ extends Node2D
 
 var number_to_call = []
 var called_index = 0
-var ball_call_interval = 1
+var ball_call_interval = 5
 var is_ball_calling = true
 
 # Called when the node enters the scene tree for the first time.
