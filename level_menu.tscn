@@ -32,10 +32,23 @@ texture = ExtResource("2_ktbo0")
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
 theme_override_constants/separation = 50
+alignment = 1
 
 [node name="Title" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 text = "Bingo World Tour"
+label_settings = SubResource("LabelSettings_5ro15")
+horizontal_alignment = 1
+
+[node name="Title2" type="Label" parent="VBoxContainer/Title"]
+layout_mode = 2
+offset_left = 4.0
+offset_top = 77.0
+offset_right = 1102.0
+offset_bottom = 196.0
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(400, 50)
+text = "Level Selection"
 label_settings = SubResource("LabelSettings_5ro15")
 horizontal_alignment = 1
 

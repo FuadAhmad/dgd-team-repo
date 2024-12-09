@@ -38,6 +38,7 @@ layout_mode = 2
 color = Color(0.239216, 0.239216, 0.239216, 0.92549)
 
 [node name="Label2" type="Label" parent="ColorRect"]
+visible = false
 layout_mode = 2
 offset_top = 9.0
 offset_right = 90.0
