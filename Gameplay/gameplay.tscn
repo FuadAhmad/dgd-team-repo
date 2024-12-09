@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c7c1l6j2kjnsa"]
+[gd_scene load_steps=18 format=3 uid="uid://c7c1l6j2kjnsa"]
 
 [ext_resource type="Script" path="res://Gameplay/gameplay.gd" id="1_k0f4f"]
 [ext_resource type="Texture2D" uid="uid://dagb0tnl2wjrm" path="res://Gameplay/bingo-card2.png" id="2_edurn"]
@@ -9,6 +9,14 @@
 [ext_resource type="Texture2D" uid="uid://cbxx8285qlkfh" path="res://Gameplay/monster.png" id="7_k7qb3"]
 [ext_resource type="Script" path="res://Gameplay/monster.gd" id="8_t26ny"]
 [ext_resource type="Texture2D" uid="uid://bdjjv74df4224" path="res://Gameplay/ice-frozen.png" id="9_ec58l"]
+[ext_resource type="Texture2D" uid="uid://c7y1wnckhouq3" path="res://assets/powerups/arrow.png" id="10_1tvho"]
+[ext_resource type="Texture2D" uid="uid://f61w3ac8xpwg" path="res://assets/powerups/Dab2.png" id="11_1jj4v"]
+[ext_resource type="Texture2D" uid="uid://blpub7s35q1bp" path="res://assets/powerups/Free_Powerup.png" id="12_e6iib"]
+[ext_resource type="Texture2D" uid="uid://gguo1h37gfk0" path="res://assets/powerups/ok.png" id="12_p81y6"]
+[ext_resource type="Texture2D" uid="uid://dvrl27i4ugnnb" path="res://assets/powerups/Powerup-SingleDaub.png" id="13_q7ok7"]
+[ext_resource type="Texture2D" uid="uid://bp60nnehal7f" path="res://assets/powerups/instantBingo.png" id="14_gu7ac"]
+[ext_resource type="Texture2D" uid="uid://bnafav816xtwp" path="res://assets/powerups/TresureBox.png" id="15_g1h3q"]
+[ext_resource type="Texture2D" uid="uid://xtvp3ww0u2yh" path="res://assets/powerups/Close.png" id="15_gxdy8"]
 
 [node name="Gameplay" type="Node2D"]
 script = ExtResource("1_k0f4f")
@@ -108,3 +116,87 @@ offset_bottom = 111.0
 texture = ExtResource("9_ec58l")
 expand_mode = 1
 stretch_mode = 4
+
+[node name="Powerup" type="Node2D" parent="."]
+position = Vector2(1048, 60)
+
+[node name="Label" type="Label" parent="Powerup"]
+offset_left = -61.0
+offset_top = -14.0
+offset_right = 77.0
+offset_bottom = 23.0
+text = "Powerups"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Powerup"]
+offset_left = -100.0
+offset_top = 29.0
+offset_right = 150.0
+offset_bottom = 670.0
+scale = Vector2(0.7, 0.7)
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Powerup/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Powerup/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture = ExtResource("10_1tvho")
+expand_mode = 3
+stretch_mode = 3
+
+[node name="TextureButton" type="TextureButton" parent="Powerup/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("12_e6iib")
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="Powerup/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Powerup/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+texture = ExtResource("12_p81y6")
+expand_mode = 3
+stretch_mode = 3
+
+[node name="TextureButton" type="TextureButton" parent="Powerup/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+texture_normal = ExtResource("11_1jj4v")
+stretch_mode = 0
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Powerup/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Powerup/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("12_p81y6")
+stretch_mode = 3
+
+[node name="TextureButton" type="TextureButton" parent="Powerup/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+texture_normal = ExtResource("13_q7ok7")
+stretch_mode = 0
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Powerup/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Powerup/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+texture = ExtResource("15_gxdy8")
+expand_mode = 3
+stretch_mode = 3
+
+[node name="TextureButton" type="TextureButton" parent="Powerup/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+texture_normal = ExtResource("14_gu7ac")
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="Powerup/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Powerup/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+texture = ExtResource("15_gxdy8")
+expand_mode = 3
+stretch_mode = 3
+
+[node name="TextureButton" type="TextureButton" parent="Powerup/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+texture_normal = ExtResource("15_g1h3q")

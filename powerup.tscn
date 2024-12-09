@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnbb6avgxx15b"]
+
+[ext_resource type="Texture2D" uid="uid://extgbgqind56" path="res://assets/arrowRight.png" id="1_u4bte"]
+[ext_resource type="Texture2D" uid="uid://f61w3ac8xpwg" path="res://assets/powerups/Dab2.png" id="2_a7sh2"]
+
+[node name="Powerup" type="HBoxContainer"]
+clip_contents = true
+size_flags_horizontal = 0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_u4bte")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 2
+texture_normal = ExtResource("2_a7sh2")
