@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bbs0wsvrgrn4g"]
+[gd_scene load_steps=8 format=3 uid="uid://bbs0wsvrgrn4g"]
 
 [ext_resource type="Texture2D" uid="uid://b2tl75us8veta" path="res://assets/clipart1654273.png" id="1_ueox3"]
 [ext_resource type="Texture2D" uid="uid://dm0akd16updgk" path="res://assets/card1.png" id="2_hy44o"]
 [ext_resource type="Script" path="res://texture_button.gd" id="3_0qnwq"]
 [ext_resource type="Texture2D" uid="uid://dot8k4nlv4mcj" path="res://assets/card2.png" id="3_q2utt"]
 [ext_resource type="Texture2D" uid="uid://dm8c6vmo8uua7" path="res://assets/card3.png" id="4_5pqd7"]
+[ext_resource type="Texture2D" uid="uid://j5mrw47wbld7" path="res://assets/lock.png" id="5_io0h5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_e6xyf"]
 font_size = 44
@@ -56,7 +57,7 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-text = "Card Screen
+text = "Card Selection
 "
 label_settings = SubResource("LabelSettings_e6xyf")
 horizontal_alignment = 1
@@ -76,8 +77,16 @@ script = ExtResource("3_0qnwq")
 layout_mode = 2
 texture_normal = ExtResource("3_q2utt")
 
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer/TextureButton2"]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 84.0
+offset_right = 267.0
+offset_bottom = 275.0
+texture = ExtResource("5_io0h5")
+
 [node name="TextureButton3" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("4_5pqd7")
 
-[connection signal="gui_input" from="VBoxContainer/HBoxContainer/TextureButton" to="VBoxContainer/HBoxContainer/TextureButton" method="_on_gui_input"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/TextureButton" to="VBoxContainer/HBoxContainer/TextureButton" method="_on_pressed"]

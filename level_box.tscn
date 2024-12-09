@@ -33,8 +33,19 @@ offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_tewb2")
 script = ExtResource("1_bh3ql")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0.239216, 0.239216, 0.239216, 0.92549)
+
+[node name="Label2" type="Label" parent="ColorRect"]
+layout_mode = 2
+offset_top = 9.0
+offset_right = 90.0
+offset_bottom = 32.0
+text = "LABEL"
+horizontal_alignment = 1
+
 [node name="Label" type="Label" parent="."]
-visible = false
 layout_mode = 2
 text = "1"
 label_settings = SubResource("LabelSettings_nk7u7")
