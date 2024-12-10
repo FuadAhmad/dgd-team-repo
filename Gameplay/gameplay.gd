@@ -7,7 +7,6 @@ var is_ball_calling = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	number_to_call =  get_random_numbers(55, 1, 75)
 	call_a_ball()
 	var tween = get_tree().create_tween()
 	#tween.tween_property($BallCall, "position", Vector2(500,200), 5 )	
@@ -22,7 +21,8 @@ func call_a_ball():
 		called_index += 1
 	
 	await get_tree().create_timer(ball_call_interval).timeout
-	call_a_ball()
+	if is_ball_calling:
+		call_a_ball()
 	
 func set_is_ball_calling(state):
 	is_ball_calling = state

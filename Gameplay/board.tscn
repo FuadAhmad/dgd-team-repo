@@ -21,76 +21,99 @@ script = ExtResource("1_k0vch")
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
-
-[node name="Button25" type="Button" parent="."]
-custom_minimum_size = Vector2(88, 88)
-layout_mode = 2
-theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button2" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button3" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button4" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button5" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button6" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button7" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button8" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button9" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button10" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button11" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button12" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button13" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button14" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button15" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
@@ -98,6 +121,8 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button16" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
@@ -105,6 +130,8 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button17" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
@@ -112,6 +139,8 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button18" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
@@ -119,6 +148,8 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button19" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
@@ -126,6 +157,8 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button20" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
@@ -133,6 +166,8 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button21" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
@@ -140,6 +175,8 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button22" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
@@ -147,6 +184,8 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button23" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
@@ -154,6 +193,8 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button24" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
@@ -161,3 +202,14 @@ layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button25" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+icon_alignment = 1
+expand_icon = true
