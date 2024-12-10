@@ -1,10 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://c7c1l6j2kjnsa"]
+[gd_scene load_steps=19 format=3 uid="uid://c7c1l6j2kjnsa"]
 
 [ext_resource type="Script" path="res://Gameplay/gameplay.gd" id="1_k0f4f"]
 [ext_resource type="Texture2D" uid="uid://dagb0tnl2wjrm" path="res://Gameplay/bingo-card2.png" id="2_edurn"]
 [ext_resource type="Script" path="res://Gameplay/ball_call.gd" id="2_j37dy"]
 [ext_resource type="PackedScene" uid="uid://bkhq58ogy7np" path="res://Gameplay/ball.tscn" id="3_r3gmh"]
 [ext_resource type="PackedScene" uid="uid://cu2tp6yfuvbvf" path="res://Gameplay/board.tscn" id="3_sg2tb"]
+[ext_resource type="Texture2D" uid="uid://tjxn3a864u67" path="res://assets/powerups/Dab.png" id="6_76ec1"]
 [ext_resource type="Texture2D" uid="uid://dfatjksuo6srg" path="res://Gameplay/goodBingoBG.jpg" id="6_jqddx"]
 [ext_resource type="Texture2D" uid="uid://cbxx8285qlkfh" path="res://Gameplay/monster.png" id="7_k7qb3"]
 [ext_resource type="Script" path="res://Gameplay/monster.gd" id="8_t26ny"]
@@ -80,7 +81,30 @@ offset_bottom = 633.0
 grow_vertical = 1
 scale = Vector2(0.92, 0.92)
 
+[node name="Button" parent="Board" index="0"]
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button13" parent="Board" index="13"]
+icon = ExtResource("6_76ec1")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button24" parent="Board" index="24"]
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureButton2" type="TextureButton" parent="Board"]
+layout_mode = 2
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Board/TextureButton2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
 [node name="BingoWin" type="TextureRect" parent="."]
+visible = false
 offset_left = 304.0
 offset_top = 173.0
 offset_right = 773.0
@@ -179,6 +203,7 @@ texture = ExtResource("15_gxdy8")
 [node name="TextureButton" parent="Powerups/VBoxContainer/Powerup6" index="1"]
 texture_normal = ExtResource("17_3tttp")
 
+[editable path="Board"]
 [editable path="Powerups/VBoxContainer/Powerup2"]
 [editable path="Powerups/VBoxContainer/Powerup4"]
 [editable path="Powerups/VBoxContainer/Powerup5"]

@@ -14,7 +14,9 @@ func _ready() -> void:
 	powerup_container.add_child(p1)
 	
 
-
+func use_powerup(powerid):
+	print("----using power id: " + str(powerid))
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

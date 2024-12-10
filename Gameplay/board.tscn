@@ -22,6 +22,11 @@ custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
 
+[node name="Button25" type="Button" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+
 [node name="Button2" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
@@ -151,13 +156,6 @@ size_flags_vertical = 0
 theme_override_font_sizes/font_size = 64
 
 [node name="Button24" type="Button" parent="."]
-custom_minimum_size = Vector2(88, 88)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-theme_override_font_sizes/font_size = 64
-
-[node name="Button25" type="Button" parent="."]
 custom_minimum_size = Vector2(88, 88)
 layout_mode = 2
 size_flags_horizontal = 0

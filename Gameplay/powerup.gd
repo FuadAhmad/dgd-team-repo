@@ -15,12 +15,12 @@ enum PType {
 }
 @export var power_status : int
 var power_type 
-
+var parent_powerups
 	
 func _ready():
-	var parent_node = find_node_in_parents("Powerups")
-	if parent_node:
-		print("Parent node found:", parent_node)
+	parent_powerups = find_node_in_parents("Powerups")
+	if parent_powerups:
+		pass#print("Parent node found:", parent_powerups)
 	else:
 		print("Parent node not found")
 
@@ -61,3 +61,4 @@ func _on_texture_button_pressed() -> void:
 	print("-----powerup status: " + str(power_status))
 	if power_status == 1:
 		print("-----powerup being used.")
+		parent_powerups.use_powerup(2)

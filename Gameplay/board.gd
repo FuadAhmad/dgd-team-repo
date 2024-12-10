@@ -7,12 +7,14 @@ var gameplay
 var BingoWinScreen 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
 	make_board()
 	print("Board's parent: ", get_parent().name)
 	gameplay = get_parent()
 	BingoWinScreen = gameplay.get_node("BingoWin")
 	BingoWinScreen.visible = false
 	#print(number2D)
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -35,9 +37,10 @@ func set_board_UI():
 	for button in buttons:
 		var number =  number2D[button_index%5][button_index/5]
 		button.connect("pressed", _on_button_daub.bind(button_index, button, number))
+		
 		button.text = str(number)#.pop_back())
 		button_index += 1
-		
+	#buttons[13].text = " "
 		
 func _on_button_daub(index, button, number):
 	#print("Pressed button index", indx)
@@ -46,6 +49,7 @@ func _on_button_daub(index, button, number):
 		daubed2D[index%5][index/5] = 1
 		check_for_bingo()
 		button.disabled = true
+		#button.Icon = load("res://assets/powerups/Dab.png")
 	
 func set_bingo_win():
 	BingoWinScreen.visible = true
